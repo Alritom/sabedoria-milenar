@@ -20,7 +20,7 @@ Este projeto foi construído utilizando a tríade fundamental da Web:
 3.  **JavaScript** para a inteligência de busca e interatividade.
 
 ## 🔗 Link do Projeto
-[COLOQUE O LINK DO SITE AQUI]
+[Sabedoria_milenar](https://alritom.github.io/sabedoria-milenar/)
 
 ---
 Desenvolvido por Alritom C. Bezerra no evento Imersão Dev da Alura.
