@@ -32,7 +32,9 @@ function renderizarCards(cardsParaRenderizar) {
 
     for (const dado of cardsParaRenderizar) {
         const article = document.createElement("article");
+        article.classList.add("card"); // Adiciona a classe 'card' para estilização
         article.innerHTML = `
+            <img src="${dado.imagem}" alt="Imagem ilustrativa sobre ${dado.assunto}">
             <h2>${dado.assunto}</h2>
             <p>${dado.descrição}</p>
             <a href="${dado.link}" target="_blank">Saiba mais</a>

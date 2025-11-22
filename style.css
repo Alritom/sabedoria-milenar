@@ -4,15 +4,16 @@
 }
 
 :root {
+    
     --primary-color: #FE6C2B; /* Cor primária (laranja) */
     --secondary-color: #e8eaed; /* Cor secundária (cinza claro) */
     --tertiary-color: #9F102C; /* Cor terciária (vermelho escuro) */
-    --bg-color: #020001; /* Cor de fundo (preto) */
+    --bg-color: #070d44; /* Cor de fundo (preto) */
 }
 
 body {
     margin: 0; /* Remove a margem padrão do body */
-    background: var(--bg-color); /* Define a cor de fundo usando uma variável */
+    background-image: linear-gradient(to top, #0C11EB, #0947F0, #1190F0); /* Define a cor de fundo usando degradê */
     color: var(--secondary-color); /* Define a cor do texto padrão usando uma variável */
     font-family: "Roboto", sans-serif;
 }

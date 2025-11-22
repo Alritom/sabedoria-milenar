@@ -2,37 +2,73 @@
 {
     "assunto": "Prosperidade Financeira",
     "descrição": "O Verdadeiro Segredo da Prosperidade: Não é Dinheiro, é Sabedoria",
-    "link": "https://www.youtube.com/watch?v=797T5h7zSnw&t=594s"
+    "link": "https://www.youtube.com/watch?v=797T5h7zSnw&t=594s",
+    "imagem": "./img/prosperidade-financeira.jpeg"
 },
 {
     "assunto": "Paz",
     "descrição": "15 Lições Poderosas de JESUS sobre: O Poder da Calma",
-    "link": "https://www.youtube.com/watch?v=ei6FMUyG3zc"
+    "link": "https://www.youtube.com/watch?v=ei6FMUyG3zc",
+    "imagem": "./img/paz.jpg"
 },
 {
     "assunto": "Vida conjugal",
     "descrição": "A MELHOR PREGAÇÃO SOBRE CASAMENTO - Encontro de Casais Mac Anderson",
-    "link": "https://www.youtube.com/watch?v=MNFQmPvQ5k0"
+    "link": "https://www.youtube.com/watch?v=MNFQmPvQ5k0",
+    "imagem": "./img/vida-conjugal.jpg"
 },
-
 {
     "assunto": "Foco",
     "descrição": "Como ter mais FOCO e ATENÇÃO? 4 dicas PRÁTICAS!",
-    "link": "https://www.youtube.com/watch?v=m3wZcaqsyak"
+    "link": "https://www.youtube.com/watch?v=m3wZcaqsyak",
+    "imagem": "./img/foco.jfif"
 },
 {
     "assunto": "Ansiedade",
     "descrição": "Não ande ancioso - Com Tiago Brunet",
-    "link": "https://www.youtube.com/watch?v=8JhZ4oGOFTI"
+    "link": "https://www.youtube.com/watch?v=8JhZ4oGOFTI",
+    "imagem": "./img/ansiedade.jpg"
 },
 {
     "assunto": "Propósito",
     "descrição": "Nada Pode abalar o seu propósito",
-    "link": "https://www.youtube.com/watch?v=5iYwY_z1Zu4"
+    "link": "https://www.youtube.com/watch?v=5iYwY_z1Zu4",
+    "imagem": "./img/proposito.jpg"
 },
 {
     "assunto": "Inteligência Emocional",
-    "descrição": "6. Autoconhecimento, 10 Habilidaddes Socioemocionais - com Augusto Cury",
-    "link": "https://www.youtube.com/watch?v=jyU9_zISlFI"
+    "descrição": "10 Habilidaddes Socioemocionais - com Augusto Cury",
+    "link": "https://www.youtube.com/watch?v=jyU9_zISlFI",
+    "imagem": "./img/inteligencia-emocional.png"
+},
+{
+    "assunto": "Gratidão",
+    "descrição": "GRATIDÃO, A RAINHA DAS VIRTUDES - Hernandes Dias Lopes",
+    "link": "https://www.youtube.com/watch?v=bpAoPWjH36A",
+    "imagem": "./img/gratidao.jpg"
+},
+{
+    "assunto": "Resiliência",
+    "descrição": "10 Habilidades Socioemocionais | Augusto Cury",
+    "link": "https://www.youtube.com/watch?v=0KmetnWRt9Y",
+    "imagem": "./img/resiliencia.jpg"
+},
+{
+    "assunto": "Comunicação",
+    "descrição": "O PODER DA COMUNICAÇÃO EM 2021 | Lair Ribeiro",
+    "link": "https://www.youtube.com/watch?v=MIDlP9nLCgg&t=154s",
+    "imagem": "./img/comunicacao.jpg"
+},
+{
+    "assunto": "Autoconfiança",
+    "descrição": "Como desenvolver o autoconhecimento | Casule Saúde e Bem-estar",
+    "link": "https://www.youtube.com/watch?v=Pub-_kCfcgM",
+    "imagem": "./img/autoconfianca.jfif"
+},
+{
+    "assunto": "Perdão",
+    "descrição": "O Poder do Perdão - Abrace a Liberdade e a Paz Interior",
+    "link": "https://www.youtube.com/watch?v=A1QEExCuqq4",
+    "imagem": "./img/perdao.jfif"
 }
 ]
