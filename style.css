@@ -108,6 +108,7 @@ main {
     margin: 0 auto; /* Centraliza o conteúdo principal horizontalmente */
     padding: 2rem 1rem; /* Adiciona espaçamento interno no topo/baixo e laterais */
     min-height: calc(100vh - 105px - 78px); /* Garante que o main ocupe a altura da tela menos o header e footer */
+    text-align: center;
 }
 
 article {
