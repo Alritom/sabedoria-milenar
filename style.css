@@ -1,31 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Roboto:wght@300;400;500&display=swap'); /* Importa as fontes Lora e Roboto do Google Fonts */
 * {
     box-sizing: border-box; /* Garante que padding e border não aumentem o tamanho total do elemento */
+    margin: 0; /* Remove a margem padrão de todos os elementos */
+    padding: 0; /* Remove o padding padrão de todos os elementos */
 }
 
 :root {
-    
-    --primary-color: #FE6C2B; /* Cor primária (laranja) */
-    --secondary-color: #e8eaed; /* Cor secundária (cinza claro) */
-    --tertiary-color: #9F102C; /* Cor terciária (vermelho escuro) */
-    --bg-color: #070d44; /* Cor de fundo (preto) */
+    --primary-color: #D4AF37; /* Cor primária (dourado/ouro) para destaque */
+    --secondary-color: #F5F5DC; /* Cor secundária (bege/papel antigo) para textos */
+    --tertiary-color: #A9A9A9; /* Cor terciária (cinza escuro) para placeholders e detalhes */
+    --bg-color: #12182B; /* Cor de fundo principal (azul noite escuro) */
+    --bg-secondary-color: #1a223d; /* Cor de fundo secundária para elementos como o rodapé */
 }
 
 body {
     margin: 0; /* Remove a margem padrão do body */
-    background-image: linear-gradient(to top, #0C11EB, #0947F0, #1190F0); /* Define a cor de fundo usando degradê */
+    background-color: var(--bg-color); /* Define a cor de fundo do corpo da página */
     color: var(--secondary-color); /* Define a cor do texto padrão usando uma variável */
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif; /* Define a família da fonte padrão para o corpo do texto */
+}
+
+header img{
+    width: 70px; /* Define a largura da imagem */
+    height: 70px; /* Define a altura da imagem */
+    border-radius: 50%; /* Torna a imagem circular */
+    border: 2px solid var(--primary-color); /* Adiciona uma borda dourada */
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+    margin-right: 10px; /* Adiciona uma margem à direita da imagem */
 }
 
 header {
-    padding: 2rem 1rem; /* Espaçamento interno (2rem em cima/baixo, 1rem nos lados) */
+    padding: 1rem 2rem; /* Espaçamento interno (2rem em cima/baixo, 1rem nos lados) */
     display: flex; /* Habilita o layout flexbox */
     align-items: center; /* Alinha os itens verticalmente ao centro */
-    justify-content: space-around; /* Distribui os itens com espaço ao redor */
+    /*justify-content: space-around; /* Distribui os itens com espaço ao redor */
     position: sticky; /* Mantém o cabeçalho fixo no topo ao rolar a página */
     top: 0; /* Posição do topo quando sticky */
-    background: var(--bg-color); /* Cor de fundo do cabeçalho */
+    background: var(--bg-secondary-color); /* Cor de fundo do cabeçalho */
     z-index: 10; /* Define a ordem de empilhamento para ficar sobre outros elementos */
     border-bottom: 1px solid var(--bg-color); /* Adiciona uma borda inferior */
     gap: 1rem; /* Espaçamento entre os elementos flex */
@@ -38,12 +49,17 @@ header h1 {
     white-space: nowrap; /* Impede a quebra de linha do texto */
 }
 
+header div {
+    margin-left: auto; /* Empurra o container da busca para a direita */
+    padding: 1rem; /* Adiciona espaçamento interno */
+}
+
 div input {
     padding: 0.375rem 0.75rem; /* Espaçamento interno */
     border-radius: 1rem; /* Arredonda as bordas */
     border: 1px solid var(--tertiary-color); /* Define a borda */
     background: var(--bg-color); /* Cor de fundo */
-    font-family: inherit; /* Herda a família da fonte do elemento pai */
+    font-family: "Roboto", sans-serif; /* Herda a família da fonte do elemento pai */
     font-size: 1.5rem; /* Tamanho da fonte */
     transition: all 0.2s ease; /* Adiciona uma transição suave para todas as propriedades */
     width: 30rem; /* Largura do input */
@@ -60,7 +76,7 @@ div input::placeholder {
 div input:focus {
     outline: none; /* Remove a borda de foco padrão */
     border-color: var(--primary-color); /* Muda a cor da borda ao focar */
-    box-shadow: 0 0 0 0.1rem var(--tertiary-color); /* Adiciona uma sombra de caixa para indicar foco */
+    box-shadow: 0 0 0 0.1rem var(--primary-color); /* Adiciona uma sombra de caixa para indicar foco */
 }
 
 #botao-busca {
@@ -68,39 +84,38 @@ div input:focus {
     border-radius: 1rem; /* Arredonda as bordas */
     border: none; /* Remove a borda padrão */
     cursor: pointer; /* Muda o cursor para uma mão ao passar por cima */
-    font-family: inherit; /* Herda a família da fonte */
+    font-family: "Roboto", sans-serif; /* Herda a família da fonte */
     font-weight: 500; /* Peso da fonte */
     font-size: 1rem; /* Tamanho da fonte */
     white-space: nowrap; /* Impede a quebra de linha do texto */
     transition: background-color 0.2s ease, color 0.2s ease; /* Transição suave para cor de fundo e cor do texto */
     background-color: var(--bg-color); /* Cor de fundo */
     color: var(--secondary-color); /* Cor do texto */
-    border: 1px solid var(--bg-color); /* Adiciona uma borda */
+    border: 1px solid var(--tertiary-color); /* Adiciona uma borda */
 }
 
 #botao-busca:hover {
-    background-color: #D43B2D; /* Muda a cor de fundo ao passar o mouse */
-    color: var(--bg-color); /* Muda a cor do texto ao passar o mouse */
+    background-color: var(--primary-color); /* Muda a cor de fundo ao passar o mouse */
+    color: var(--bg-secondary-color); /* Muda a cor do texto ao passar o mouse */
     box-shadow: 0 0 0 0.1rem var(--primary-color); /* Adiciona uma sombra de caixa */
 }
 
 #botao-busca:active {
     transform: scale(0.98); /* Efeito de clique (diminui o tamanho) */
 }
-
 main {
-    overflow-y: scroll; /* Adiciona uma barra de rolagem vertical se o conteúdo exceder a altura */
     max-width: 80rem; /* Largura máxima do conteúdo principal */
     margin: 0 auto; /* Centraliza o conteúdo principal horizontalmente */
-    margin-top: 2rem; /* Margem no topo */
-    height: calc(100vh - 10rem - 4rem); /* Calcula a altura para preencher o espaço restante da tela */
+    padding: 2rem 1rem; /* Adiciona espaçamento interno no topo/baixo e laterais */
+    min-height: calc(100vh - 105px - 78px); /* Garante que o main ocupe a altura da tela menos o header e footer */
 }
 
 article {
     background: none; /* Sem cor de fundo */
     border-radius: 0; /* Sem bordas arredondadas */
-    padding: 0; /* Remove o padding */
-    padding: 0 1rem; /* Espaçamento interno nos lados */
+    padding: 0; /* Remove o padding padrão */
+    padding-left: 1rem; /* Espaçamento interno à esquerda */
+    padding-right: 1rem; /* Espaçamento interno à direita */
     margin-bottom: 1.25rem; /* Margem inferior */
     box-shadow: none; /* Sem sombra */
     transition: background-color 0.3s ease, border-bottom-color 0.3s ease; /* Transição suave */
@@ -115,8 +130,9 @@ article:hover {
 
 article h2 {
     margin-top: 0; /* Remove a margem superior */
+    font-family: "Lora", serif; /* Define uma fonte com serifa para os títulos */
     font-weight: 600; /* Peso da fonte */
-    font-size: 1.6rem; /* Tamanho da fonte */
+    font-size: 1.8rem; /* Tamanho da fonte */
     border-bottom: none; /* Sem borda inferior */
     padding-bottom: 0; /* Sem espaçamento interno inferior */
     margin-bottom: 0.25rem; /* Margem inferior */
@@ -132,7 +148,7 @@ article p {
 }
 
 article p strong {
-    color: var(--tertiary-color); /* Cor do texto em negrito */
+    color: var(--primary-color); /* Cor do texto em negrito */
     font-weight: 400; /* Peso da fonte */
 }
 
@@ -146,14 +162,17 @@ article a:hover {
     text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
 
+.card-container {
+    text-align: center; /* Centraliza o texto dentro do container */
+}
+
 .footer {
-    position: absolute; /* Posicionamento absoluto em relação ao elemento pai posicionado */
-    bottom: 0; /* Alinha na parte inferior */
-    left: 0; /* Alinha à esquerda */
+    position: relative; /* Posição relativa para o fluxo normal do documento */
     width: 100%; /* Largura total */
-    color: var(--tertiary-color); /* Cor do texto */
-    background-color: var(--bg-color); /* Cor de fundo */
+    color: var(--secondary-color); /* Cor do texto */
+    background-color: var(--bg-secondary-color); /* Cor de fundo */
     padding: 15px 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o conteúdo do rodapé */
     border-top: 1px solid #340016; /* Borda superior */
     font-size: 0.8rem; /* Tamanho da fonte */
 }
@@ -185,6 +204,7 @@ article a:hover {
     header { /* Estilos para telas com largura máxima de 768px */
         flex-direction: column; /* Organiza os itens do cabeçalho em coluna */
         padding: 1rem; /* Reduz o espaçamento interno */
+        position: static; /* Remove o posicionamento fixo em telas menores */
     }
 
     header h1 { /* Estilos para o h1 no cabeçalho em telas menores */
@@ -192,12 +212,18 @@ article a:hover {
         margin-bottom: 1rem; /* Adiciona margem inferior */
     }
 
+    header div { /* Estilos para a div do header em telas menores */
+        margin-left: 0; /* Remove a margem à esquerda */
+        width: 100%; /* Ocupa toda a largura */
+    }
+
     div input { /* Estilos para o input em telas menores */
-        width: 90vw; /* Largura baseada na largura da viewport */
+        width: 100%; /* Largura total do container pai */
         font-size: 1.2rem; /* Reduz o tamanho da fonte */
     }
 
     main { /* Estilos para o main em telas menores */
+        min-height: 0; /* Reseta a altura mínima */
         padding: 0 1rem; /* Adiciona espaçamento lateral */
     }
 
@@ -213,13 +239,13 @@ article a:hover {
         word-wrap: break-word; /* Permite a quebra de palavras longas */
     }
 
-    div input, /* Estilos para o input e seu placeholder em telas muito pequenas */
-    div input::placeholder {
+    div input, /* Estilos para o input em telas muito pequenas */
+    div input::placeholder { /* Estilos para o placeholder do input em telas muito pequenas */
         font-size: 1rem; /* Reduz o tamanho da fonte */
     }
 
     article h2 { /* Estilos para o h2 do article em telas muito pequenas */
-        font-size: 1.3rem; /* Reduz o tamanho da fonte */
+        font-size: 1.4rem; /* Reduz o tamanho da fonte */
     }
 
     div { /* Estilos para a div do cabeçalho em telas muito pequenas */
@@ -230,11 +256,11 @@ article a:hover {
         gap: 0.5rem; /* Espaçamento entre os itens */
     }
 
-    .footer { /* Estilos para o rodapé em telas muito pequenas */
-        display: none; /* Oculta o rodapé */
-    }
-
     button { /* Estilos para o botão em telas muito pequenas */
         margin-top: 1rem; /* Adiciona margem no topo */
+        width: 100%; /* Faz o botão ocupar a largura total */
+    }
+    .footer-links { /* Estilos para os links do rodapé em telas muito pequenas */
+        flex-direction: column; /* Organiza os links em coluna */
     }
 }
