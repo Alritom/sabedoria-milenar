@@ -166,6 +166,7 @@ article a:hover {
 .footer {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
     position: relative; /* Posição relativa para o fluxo normal do documento */
     width: 100%; /* Largura total */
     color: var(--secondary-color); /* Cor do texto */
@@ -187,13 +188,16 @@ article a:hover {
     color: var(--primary-color);
 }
 
-.footer p {
-    margin-top: 2px;
-}
-
 .footer img {
     width: 40px;
     height: 40px;
+}
+
+.footer div {
+    width: 100%; /* Faz o p ocupar toda a largura, forçando-o para baixo */
+    text-align: center;
+    margin-top: 15px; /* Adiciona um espaço acima do p */
+    color: #BF9E60;
 }
 
 @media (max-width: 768px) {
