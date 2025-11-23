@@ -21,7 +21,7 @@
     "assunto": "Foco",
     "descrição": "Como ter mais FOCO e ATENÇÃO? 4 dicas PRÁTICAS!",
     "link": "https://www.youtube.com/watch?v=m3wZcaqsyak",
-    "imagem": "./img/foco.jfif"
+    "imagem": "./img/foco.jpg"
 },
 {
     "assunto": "Ansiedade",
@@ -39,7 +39,7 @@
     "assunto": "Inteligência Emocional",
     "descrição": "10 Habilidaddes Socioemocionais - com Augusto Cury",
     "link": "https://www.youtube.com/watch?v=jyU9_zISlFI",
-    "imagem": "./img/inteligencia-emocional.png"
+    "imagem": "./img/inteligencia-emocional.jpg"
 },
 {
     "assunto": "Gratidão",
@@ -63,12 +63,12 @@
     "assunto": "Autoconfiança",
     "descrição": "Como desenvolver o autoconhecimento | Casule Saúde e Bem-estar",
     "link": "https://www.youtube.com/watch?v=Pub-_kCfcgM",
-    "imagem": "./img/autoconfianca.jfif"
+    "imagem": "./img/autoconfianca.jpg"
 },
 {
     "assunto": "Perdão",
     "descrição": "O Poder do Perdão - Abrace a Liberdade e a Paz Interior",
     "link": "https://www.youtube.com/watch?v=A1QEExCuqq4",
-    "imagem": "./img/perdao.jfif"
+    "imagem": "./img/perdao.jpg"
 }
 ]

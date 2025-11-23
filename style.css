@@ -162,42 +162,37 @@ article a:hover {
     text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
 
-.card-container {
-    text-align: center; /* Centraliza o texto dentro do container */
-}
-
 .footer {
+    display: flex;
+    justify-content: center;
     position: relative; /* Posição relativa para o fluxo normal do documento */
     width: 100%; /* Largura total */
     color: var(--secondary-color); /* Cor do texto */
     background-color: var(--bg-secondary-color); /* Cor de fundo */
     padding: 15px 20px; /* Espaçamento interno */
     text-align: center; /* Centraliza o conteúdo do rodapé */
-    border-top: 1px solid #340016; /* Borda superior */
+    /*border-top: 1px solid #340016; /* Borda superior */
     font-size: 0.8rem; /* Tamanho da fonte */
 }
-
-.footer-location {
-    color: #9aa0a6; /* Cor do texto */
-    margin-bottom: 10px; /* Margem inferior */
+.footer a {
+    margin: 0 15px;
+    text-align: center;
+    color: var(--secondary-color);
+    text-decoration: none;
 }
 
-.footer-links {
-    list-style: none; /* Remove os marcadores da lista */
-    display: flex; /* Habilita o layout flexbox */
-    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
-    justify-content: center; /* Centraliza os itens horizontalmente */
-    gap: 15px; /* Espaçamento entre os links */
+.footer a:hover {
+    text-decoration: underline;
+    color: var(--primary-color);
 }
 
-.footer-links a {
-    color: var(--secondary-color); /* Cor do link */
-    text-decoration: none; /* Remove o sublinhado */
-    transition: color 0.2s; /* Transição suave para a cor */
+.footer p {
+    margin-top: 2px;
 }
 
-.footer-links a:hover {
-    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+.footer img {
+    width: 40px;
+    height: 40px;
 }
 
 @media (max-width: 768px) {
@@ -254,13 +249,5 @@ article a:hover {
         justify-content: center; /* Centraliza itens */
         flex-direction: column; /* Organiza em coluna */
         gap: 0.5rem; /* Espaçamento entre os itens */
-    }
-
-    button { /* Estilos para o botão em telas muito pequenas */
-        margin-top: 1rem; /* Adiciona margem no topo */
-        width: 100%; /* Faz o botão ocupar a largura total */
-    }
-    .footer-links { /* Estilos para os links do rodapé em telas muito pequenas */
-        flex-direction: column; /* Organiza os links em coluna */
     }
 }
