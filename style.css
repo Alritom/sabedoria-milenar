@@ -67,9 +67,10 @@ div input {
     font-family: "Roboto", sans-serif; /* Herda a família da fonte do elemento pai */
     font-size: 1.5rem; /* Tamanho da fonte */
     transition: all 0.2s ease; /* Adiciona uma transição suave para todas as propriedades */
-    width: 30rem; /* Largura do input */
+    width: 25rem; /* Largura do input */
     color: var(--secondary-color); /* Cor do texto digitado */
     margin-right: .5rem; /* Margem à direita */
+    margin-left: 1rem;
 }
 
 div input::placeholder {
@@ -97,6 +98,7 @@ div input:focus {
     background-color: var(--bg-color); /* Cor de fundo */
     color: var(--secondary-color); /* Cor do texto */
     border: 1px solid var(--tertiary-color); /* Adiciona uma borda */
+    margin-left: 1rem;
 }
 
 #botao-busca:hover {
