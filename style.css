@@ -14,10 +14,12 @@
 }
 
 body {
+    display: flex; /* Usa flexbox para o layout principal */
+    flex-direction: column; /* Organiza os filhos (header, main, footer) em coluna */
+    min-height: 100vh; /* Garante que o body ocupe pelo menos a altura total da tela */
     margin: 0; /* Remove a margem padrão do body */
     background-color: var(--bg-color); /* Define a cor de fundo do corpo da página */
     color: var(--secondary-color); /* Define a cor do texto padrão usando uma variável */
-    font-family: "Roboto", sans-serif; /* Define a família da fonte padrão para o corpo do texto */
 }
 
 header img{
@@ -33,7 +35,7 @@ header {
     padding: 1rem 2rem; /* Espaçamento interno (2rem em cima/baixo, 1rem nos lados) */
     display: flex; /* Habilita o layout flexbox */
     align-items: center; /* Alinha os itens verticalmente ao centro */
-    /*justify-content: space-around; /* Distribui os itens com espaço ao redor */
+    justify-content: space-around; /* Distribui os itens com espaço ao redor */
     position: sticky; /* Mantém o cabeçalho fixo no topo ao rolar a página */
     top: 0; /* Posição do topo quando sticky */
     background: var(--bg-secondary-color); /* Cor de fundo do cabeçalho */
@@ -49,8 +51,11 @@ header h1 {
     white-space: nowrap; /* Impede a quebra de linha do texto */
 }
 
-header div {
+.search-container {
+    display: flex; /* Habilita flexbox para o container da busca */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha em telas menores */
     margin-left: auto; /* Empurra o container da busca para a direita */
+    gap: 0.5rem; /* Espaçamento entre o input e o botão */
     padding: 1rem; /* Adiciona espaçamento interno */
 }
 
@@ -104,10 +109,10 @@ div input:focus {
     transform: scale(0.98); /* Efeito de clique (diminui o tamanho) */
 }
 main {
+    flex-grow: 1; /* Faz o main ocupar todo o espaço vertical disponível */
     max-width: 80rem; /* Largura máxima do conteúdo principal */
-    margin: 0 auto; /* Centraliza o conteúdo principal horizontalmente */
+    margin: 0 auto; /* Centraliza o conteúdo principal horizontalmente */    
     padding: 2rem 1rem; /* Adiciona espaçamento interno no topo/baixo e laterais */
-    min-height: calc(100vh - 105px - 78px); /* Garante que o main ocupe a altura da tela menos o header e footer */
     text-align: center;
 }
 
@@ -140,6 +145,15 @@ article:hover {
     transform: scale(1.01); /* Aumenta ligeiramente o tamanho ao passar o mouse */
     cursor: pointer; /* Muda o cursor para uma mão */
 }
+
+article img {
+    width: 50%; /* Faz a imagem ocupar toda a largura do artigo */
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do seu contêiner */
+    height: auto; /* A altura se ajusta automaticamente para manter a proporção */
+    display: block; /* Remove espaços extras que podem aparecer abaixo da imagem */
+    margin: 0 auto 1rem auto; /* Adiciona um espaço abaixo da imagem */
+    border-radius: 0.5rem; /* Arredonda os cantos da imagem */
+    }
 
 article h2 {
     margin-top: 0; /* Remove a margem superior */
@@ -224,13 +238,14 @@ article a:hover {
         margin-bottom: 1rem; /* Adiciona margem inferior */
     }
 
-    header div { /* Estilos para a div do header em telas menores */
+    .search-container { /* Estilos para a div do header em telas menores */
         margin-left: 0; /* Remove a margem à esquerda */
         width: 100%; /* Ocupa toda a largura */
+        justify-content: center; /* Centraliza os itens da busca */
     }
 
     div input { /* Estilos para o input em telas menores */
-        width: 100%; /* Largura total do container pai */
+        flex-grow: 1; /* Permite que o input cresça para preencher o espaço */
         font-size: 1.2rem; /* Reduz o tamanho da fonte */
     }
 
@@ -260,11 +275,7 @@ article a:hover {
         font-size: 1.4rem; /* Reduz o tamanho da fonte */
     }
 
-    div { /* Estilos para a div do cabeçalho em telas muito pequenas */
-        display: flex; /* Habilita flexbox */
-        align-items: center; /* Alinha itens ao centro */
-        justify-content: center; /* Centraliza itens */
-        flex-direction: column; /* Organiza em coluna */
-        gap: 0.5rem; /* Espaçamento entre os itens */
+    .search-container {
+        flex-direction: column;
     }
 }
